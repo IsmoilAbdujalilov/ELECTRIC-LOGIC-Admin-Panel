@@ -10,38 +10,25 @@ import LoginIcon from "@mui/icons-material/Login";
 import IconButton from "@mui/material/IconButton";
 import List from "@mui/material/List";
 import { styled, alpha } from "@mui/material/styles";
-import CategoryIcon from "@mui/icons-material/Category";
 import HomeIcon from "@mui/icons-material/Home";
 import ListItem from "@mui/material/ListItem";
 import Menu, { MenuProps } from "@mui/material/Menu";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemIcon from "@mui/material/ListItemIcon";
-import EditIcon from "@mui/icons-material/Edit";
 import PersonIcon from "@mui/icons-material/Person";
-import ArchiveIcon from "@mui/icons-material/Archive";
 import ListItemText from "@mui/material/ListItemText";
 import MenuIcon from "@mui/icons-material/Menu";
-import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import Toolbar from "@mui/material/Toolbar";
 import { Link } from "react-router-dom";
-import AccountCircleIcon from "@mui/icons-material/AccountCircle";
-import Typography from "@mui/material/Typography";
-import FileCopyIcon from "@mui/icons-material/FileCopy";
-import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
-import { Avatar, Button, MenuItem, Tooltip } from "@mui/material";
+import { Avatar, Button, MenuItem } from "@mui/material";
 
 const drawerWidth = 240;
 
 interface Props {
-  /**
-   * Injected by the documentation to work in an iframe.
-   * Remove this when copying and pasting into your project.
-   */
   window?: () => Window;
 }
 
-export default function ResponsiveDrawer(props: Props) {
-  const { window } = props;
+export default function ResponsiveDrawer(_: Props) {
   const [mobileOpen, setMobileOpen] = React.useState<boolean>(false);
   const [isClosing, setIsClosing] = React.useState<boolean>(false);
 
